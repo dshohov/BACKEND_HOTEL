@@ -1,16 +1,4 @@
-﻿@*@model IEnumerable<HOTEL.Models.Tour>
-@{
-    ViewBag.Title = "Все пользователи";
-}
-<a asp-action="Create">Добавить пользователя</a>
-<table class="table">
-    <tr><td>Город</td><td>Страна</td><td>Дата</td><td>Количество ночей</td><td>Туристов</td></tr>
-    @foreach (var item in Model)
-    {
-       <tr><td>@item.City</td><td>@item.Country</td><td>@item.Date</td><td>@item.Night</td><td>@item.Turist</td></tr>
-    }
-</table>*@
-@model HOTEL.Models.Tour
+﻿@model HOTEL.Models.Tour
 @{
     ViewBag.Title = "Добавление пользователя";
 }
@@ -36,8 +24,8 @@
                 </li>
                 <li>
                     <ul class="header_2_2block">
-                        <a href="#" ><li class="block1">Хочу в тур</li></a>
-                        <a href="#"><li class="block2">Обратный звонок</li></a>
+                        <a href="#tour" ><li class="block1">Хочу в тур</li></a>
+                        <a href="#tour" ><li class="block2">Обратный звонок</li></a>
                     </ul>
                 </li>
             </ul>
@@ -51,7 +39,7 @@
                             <div class="smallbox">
                                 <h2>Мальдивские острова</h2>
                                 <h3>от 55 000</h3>
-                                <a href="#"><h4>Подробнее<img src="img/Rectangle 2.svg" alt=""></h4></a>
+                                <a href="#tour" ><h4>Подробнее<img src="img/Rectangle 2.svg" alt=""></h4></a>
                             </div>
                         </td>
                         <td rowspan="3" class="emptybox1">
@@ -61,7 +49,7 @@
                             <div class="bigbox">
                                 <h2>Номера категории люкс</h2>
                                 <h3>от 5 000</h3>
-                                <a href="#"><h4>Подробнее<img src="img/Rectangle 2.svg" alt=""></h4></a>
+                                <a href="#tour" ><h4>Подробнее<img src="img/Rectangle 2.svg" alt=""></h4></a>
                                 
                             </div>
                         </td>
@@ -74,7 +62,7 @@
                             <div class="smallbox">
                                 <h2>Горящий тур на остров Крит</h2>
                                 <h3>от 30 000</h3>
-                                <a href="#"><h4>Подробнее<img src="img/Rectangle 2.svg" alt=""></h4></a>    
+                                <a href="#tour" ><h4>Подробнее<img src="img/Rectangle 2.svg" alt=""></h4></a>    
                             </div>
                         </td>
                     </tr>
@@ -176,7 +164,7 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>
-                    <a href="#">Номера</a>
+                    <a href="#tour">Номера</a>
                 </li>
                 <li>
                     <img src="img/24.png" alt="">
@@ -194,7 +182,7 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>
-                    <a href="#">Номера</a>
+                    <a href="#tour" >Номера</a>
                 </li>
                 <li>
                     <img src="img/26.png" alt="">
@@ -212,7 +200,7 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>  
-                    <a href="#">Номера</a>
+                    <a href="#tour" >Номера</a>
                 </li>
                 <li>
                     <img src="img/29-1.png" alt="">
@@ -230,7 +218,7 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>
-                    <a href="#">Номера</a>                
+                    <a href="#tour" >Номера</a>                
                 </li>
                 <li>
                     <img src="img/30.png" alt="">
@@ -248,7 +236,7 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>                
-                    <a href="#">Номера</a>
+                    <a href="#tour" >Номера</a>
                 </li>
                 <li>
                     <img src="img/31.png" alt="">
@@ -266,7 +254,7 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>                
-                    <a href="#">Номера</a>
+                    <a href="#tour" >Номера</a>
                 </li>
                 <li>
                     <img src="img/27.png" alt="">
@@ -284,7 +272,7 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>                
-                    <a href="#">Номера</a>
+                    <a href="#tour" >Номера</a>
                 </li>
                 <li>
                     <img src="img/29.png" alt="">
@@ -302,26 +290,20 @@
                     <div class="place">
                         <h5 >Барселона, Испания</h5>
                     </div>
-                    <a href="#">Номера</a>
+                    <a href="#tour">Номера</a>
                 </li>
                 <li>    
                     <h2>Посмотреть все варианты</h2>
                 </li>
             </ul>
         </div>
-        <div class="want_tour">
+        <div class="want_tour" id="tour">
             <h1>Хочу тур</h1>
-            <form asp-controller="home">
+            <form asp-controller="home" >
                 <ul>
                     <li>
-                        <label for="city">Город вылета</label>
-                        <select name="city" id="" asp-for="City">
-                            <option value="Moskow">Москва</option>
-                            <option value="SPB">Санкт-Петербург</option>
-                            <option value="Rostov">Ростов-на-дону</option>
-                            <option value="Ufa">Уфа</option>
-                            <option value="Simferopol">Симферополь</option>
-                        </select>
+                        <label for="number">Номер телефона</label>
+                        <input type="tel" name="number" asp-for="Number"/>
                     </li>
                     <li>
                         <label for="country">Страна</label><br>
@@ -346,7 +328,7 @@
                         <input type="number" min="1" asp-for="Turist" list="numbList">
                     </li>
                     <li class="last_input" >
-                        <input  type="submit" value="Найти">
+                        <input  type="submit"  value="Найти">
                     </li>
                 </ul>
             </form>
