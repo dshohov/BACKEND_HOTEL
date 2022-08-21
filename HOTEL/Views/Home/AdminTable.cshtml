@@ -4,7 +4,7 @@
 }
 <a asp-action="Index">Добавить пользователя</a>
 <table class="table">
-    <tr><td>Город</td><td>Страна</td><td>Дата</td><td>Количество ночей</td><td>Туристов</td></tr>
+    <tr><td>Номер телефона</td><td>Страна</td><td>Дата</td><td>Количество ночей</td><td>Туристов</td></tr>
     @foreach (var item in Model)
     {
        <tr><td>@item.Number</td><td>@item.Country</td><td>@item.Date</td><td>@item.Night</td><td>@item.Turist</td></tr>

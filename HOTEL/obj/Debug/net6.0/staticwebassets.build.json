@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3AwiJPGg+jk4mHSFA0f2/jvxhEeaM/6LKlHs2KkTFxM=",
+  "Hash": "9lPnoLXCFZGYp0Xi9fNWQ5U8yf5PrfQJc9GwUGUDU3Q=",
   "Source": "HOTEL",
   "BasePath": "_content/HOTEL",
   "Mode": "Default",
@@ -1579,6 +1579,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\stylesheet.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Pizzeria\\HOTEL\\HOTEL\\wwwroot\\icons8-hotel-16.png",
+      "SourceId": "HOTEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Pizzeria\\HOTEL\\HOTEL\\wwwroot\\",
+      "BasePath": "_content/HOTEL",
+      "RelativePath": "icons8-hotel-16.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons8-hotel-16.png"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Pizzeria\\HOTEL\\HOTEL\\wwwroot\\img\\10.png",

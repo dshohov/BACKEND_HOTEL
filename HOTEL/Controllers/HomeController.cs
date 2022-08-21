@@ -27,5 +27,7 @@ namespace HOTEL.Controllers
         {
             return View(await db.Tour.ToListAsync());
         }
+
+
     }
 }
